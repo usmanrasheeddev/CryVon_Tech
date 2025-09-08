@@ -178,7 +178,7 @@ export default function Hero() {
                 <div className="text-4xl">👩‍💻</div>
               </div>
               <h3 className="text-xl font-semibold mb-2">Faizan Ahmad</h3>
-              <p className="text-amber-400 text-sm mb-3">HR & UI/UX Specialist</p>
+              <p className="text-amber-400 text-sm mb-3">HR <br/>UI/UX Specialist</p>
               <p className="text-slate-300 mb-4 text-sm">Creates intuitive user interfaces with a focus on accessibility, performance, and beautiful animations.</p>
               <div className="flex gap-2 justify-center flex-wrap">
                 <span className="px-2 py-1 bg-slate-700/50 text-slate-300 rounded text-xs border border-slate-600/50">Figma</span>
@@ -192,12 +192,14 @@ export default function Hero() {
                 <div className="text-4xl">👨‍💻</div>
               </div>
               <h3 className="text-xl font-semibold mb-2">Usman Rasheed</h3>
-              <p className="text-purple-400 text-sm mb-3">Data Analyst & backend Developer</p>
-              <p className="text-slate-300 mb-4 text-sm"><span>Python|Excel|SQL|Java</span> Transforming raw data into meaningful insights to drive smarter business decisions.</p>
+              <p className="text-purple-400 text-sm mb-3">HR <br/>Data Analyst & backend Developer</p>
+              <p className="text-slate-300 mb-4 text-sm">Transforming raw data into meaningful insights to drive smarter business decisions.</p>
               <div className="flex gap-2 justify-center flex-wrap">
-                <span className="px-2 py-1 bg-slate-700/50 text-slate-300 rounded text-xs border border-slate-600/50">Vue.js</span>
-                <span className="px-2 py-1 bg-slate-700/50 text-slate-300 rounded text-xs border border-slate-600/50">Nuxt.js</span>
-                <span className="px-2 py-1 bg-slate-700/50 text-slate-300 rounded text-xs border border-slate-600/50">GraphQL</span>
+                <span className="px-2 py-1 bg-slate-700/50 text-slate-300 rounded text-xs border border-slate-600/50">Python</span>
+                <span className="px-2 py-1 bg-slate-700/50 text-slate-300 rounded text-xs border border-slate-600/50">Java</span>
+                <span className="px-2 py-1 bg-slate-700/50 text-slate-300 rounded text-xs border border-slate-600/50">Excel</span>
+               <span className="px-2 py-1 bg-slate-700/50 text-slate-300 rounded text-xs border border-slate-600/50">SQL</span>
+
               </div>
             </div>
           </div>
