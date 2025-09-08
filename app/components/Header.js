@@ -1,13 +1,20 @@
 // app/components/Header.js
 import Link from "next/link";
-
+import Image from "next/image";
 export default function Header() {
   return (
     <header className="sticky top-0 z-40 w-full glass border-b border-slate-800/60 bg-slate-900">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-3">
-            <img src="/logo.png" alt="Edge Rise Logo" className="w-9 h-9 rounded-md object-cover"/>
+           <Image
+  src="/logo.png"
+  alt="Edge Rise Logo"
+  width={36}   // 👈 w-9 = 36px
+  height={36}  // 👈 h-9 = 36px
+  className="rounded-md object-cover"
+/>
+
             <div>
               <div className="text-xl font-extrabold tracking-tight">Edge Rise</div>
               <div className="text-xs text-slate-400 -mt-1">Software House • 20+ Engineers</div>
