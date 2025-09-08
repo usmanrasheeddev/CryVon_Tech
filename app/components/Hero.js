@@ -23,17 +23,67 @@ export default function Hero() {
                 <span className="text-amber-400">Rise</span>
               </Link>
             </div>
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-4">
-                <Link href="/" className="text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Home</Link>
-                <Link href="/services" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Services</Link>
-                <Link href="/tech" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Tech Stack</Link>
-                <Link href="/projects" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Projects</Link>
-                <Link href="/team" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Team</Link>
-                <Link href="/careers" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">careers</Link>
-                <Link href="/contact" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Contact</Link>
-              </div>
-            </div>
+           <div className="hidden md:block">
+  <div className="ml-10 flex items-baseline space-x-4">
+    <Link
+      href="/"
+      className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${
+        activeSection === "home" ? "text-yellow-400" : "text-white"
+      }`}
+    >
+      Home
+    </Link>
+    <Link
+      href="/services"
+      className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${
+        activeSection === "services" ? "text-yellow-400" : "text-gray-300 hover:text-white"
+      }`}
+    >
+      Services
+    </Link>
+    <Link
+      href="/tech"
+      className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${
+        activeSection === "tech" ? "text-yellow-400" : "text-gray-300 hover:text-white"
+      }`}
+    >
+      Tech Stack
+    </Link>
+    <Link
+      href="/projects"
+      className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${
+        activeSection === "projects" ? "text-yellow-400" : "text-gray-300 hover:text-white"
+      }`}
+    >
+      Projects
+    </Link>
+    <Link
+      href="/team"
+      className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${
+        activeSection === "team" ? "text-yellow-400" : "text-gray-300 hover:text-white"
+      }`}
+    >
+      Team
+    </Link>
+    <Link
+      href="/careers"
+      className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${
+        activeSection === "careers" ? "text-yellow-400" : "text-gray-300 hover:text-white"
+      }`}
+    >
+      Careers
+    </Link>
+    <Link
+      href="/contact"
+      className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${
+        activeSection === "contact" ? "text-yellow-400" : "text-gray-300 hover:text-white"
+      }`}
+    >
+      Contact
+    </Link>
+  </div>
+</div>
+
           </div>
         </div>
       </nav>
@@ -51,8 +101,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link href="/contact">
                 <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:-translate-y-1 shadow-md hover:shadow-lg font-medium">
-                  Get Free Consultation
-                </button>
+                 Support                </button>
               </Link>
               <Link href="/projects">
                 <button className="px-8 py-3 bg-slate-700 text-slate-300 rounded-lg hover:bg-slate-600 transition-all duration-300 transform hover:-translate-y-1 font-medium border border-slate-600 hover:border-slate-500">
@@ -130,7 +179,7 @@ export default function Hero() {
             <div className="bg-slate-800/30 p-6 rounded-xl border border-slate-700/30 hover:border-purple-500/30 transition-all duration-500 hover:scale-[1.02]">
               <div className="text-4xl text-purple-400 mb-4">🤖</div>
               <h3 className="text-xl font-semibold mb-3">AI Solutions</h3>
-              <p className="text-slate-300 mb-4">Leverage AI to automate processes and gain competitive advantage.</p>
+              <p className="text-slate-300 mb-4">Leverage AI to automate processes and gain competitive advantage and also creating advance AI Agents.</p>
               <Link href="/services" className="text-purple-400 hover:text-purple-300 text-sm font-medium flex items-center">
                 Learn more
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -154,8 +203,8 @@ export default function Hero() {
       <section className="py-20 bg-slate-800/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Frontend Experts</h2>
-            <p className="text-slate-300 max-w-2xl mx-auto">Our frontend developers specialize in creating responsive, performant, and user-friendly interfaces.</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Experts</h2>
+            <p className="text-slate-300 max-w-2xl mx-auto">Our frontend developers specialize in creating responsive, performant, and user-friendly interfaces & Handling Backends.</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
