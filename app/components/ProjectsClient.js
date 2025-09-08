@@ -8,20 +8,21 @@ export default function Projects() {
   const projectsRef = useRef(null);
 
   const projectsData = [
-    {
-      id: 1,
-      title: "EduRise LMS",
-      category: "web",
-      description: "A complete e-learning system with live classes and progress tracking.",
-      fullDescription: "EduRise is a comprehensive Learning Management System designed for educational institutions. It features live class capabilities, student progress tracking, assignment management, and interactive quizzes. The platform supports both instructors and students with an intuitive interface and powerful analytics.",
-      technologies: ["React.js", "Node.js", "MongoDB", "Express", "Socket.io"],
-      result: "Improved student engagement by 45%",
-      image: "/api/placeholder/400/250",
-      features: ["Live Classes", "Progress Tracking", "Assignment Management", "Interactive Quizzes"],
-      client: "EduNext Inc.",
-      duration: "6 months",
-      link: "#"
-    },
+   {
+  id: 1,
+  title: "Data Analytics",
+  category: "data",
+  description: "Professional data analysis and business intelligence services.",
+  fullDescription: "We provide end-to-end data analysis solutions that help businesses make informed decisions. Our services include data cleaning, visualization, predictive analytics, and reporting. By turning raw data into actionable insights, we enable companies to optimize operations and improve strategy.",
+  technologies: ["Python", "SQL", "Excel", "Power BI", "Tableau"],
+  result: "Helped clients increase efficiency and decision-making accuracy by 40%",
+  image: "/api/placeholder/400/250",
+  features: ["Data Cleaning & Preparation", "Visualization Dashboards", "Predictive Analytics", "Custom Reports"],
+  client: "Multiple SME & Enterprise Clients",
+  duration: "Ongoing",
+  link: "#"
+},
+
     {
       id: 2,
       title: "ShopEdge E-commerce",
@@ -151,11 +152,15 @@ export default function Projects() {
             <div 
               key={project.id}
               className="bg-gradient-to-br from-slate-800/70 to-slate-900/70 rounded-2xl shadow-lg border border-slate-700/50 overflow-hidden group hover:shadow-xl transition-all duration-500"
-              style={{ 
-                animationDelay: `${index * 100}ms`,
-                opacity: 0,
-                animation: 'fadeInUp 0.6s ease forwards'
-              }}
+             style={{ 
+  animationName: 'fadeInUp',
+  animationDuration: '0.6s',
+  animationTimingFunction: 'ease',
+  animationFillMode: 'forwards',
+  animationDelay: `${index * 100}ms`,
+  opacity: 0
+}}
+
             >
               {/* Project Image */}
               <div className="h-48 overflow-hidden relative">
