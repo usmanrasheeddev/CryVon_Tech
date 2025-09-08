@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function HomePage() {
+export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -218,7 +218,7 @@ export default function HomePage() {
           
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Project?</h2>
           <p className="text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Let's discuss how we can bring your ideas to life with our expertise and innovative solutions. Contact us today for a free consultation.
+            Lets discuss how we can bring your ideas to life with our expertise and innovative solutions. Contact us today for a free consultation.
           </p>
           <Link href="/contact">
             <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:-translate-y-1 shadow-md hover:shadow-lg font-medium">
