@@ -42,7 +42,7 @@ export default function Hero() {
               Rising Beyond Limits in <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">Tech Solutions</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-3xl mx-auto">
-              Edge Rise helps businesses grow with modern, scalable and affordable technology solutions.
+              Edge Rise helps businesses grow with modern scalable and affordable technology solutions.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-300 transform hover:-translate-y-1 shadow hover:shadow-lg font-medium">
@@ -153,7 +153,7 @@ export default function Hero() {
                 <h3 className="text-xl font-bold mb-2">Faizan Ahmad</h3>
                 <p className="text-slate-400 mb-4">HR Specialist & Operations</p>
                 <p className="text-slate-300 mb-4">
-                  Faizan ensures smooth operations and employee satisfaction, focusing on creating a productive work environment.
+                  Faizan ensures smooth operations and employee satisfaction focusing on creating a productive work environment.
                 </p>
                 <div className="flex gap-2 justify-center flex-wrap">
                   <span className="px-3 py-1 bg-slate-700/50 text-slate-300 rounded-full text-sm">Operations</span>
@@ -212,7 +212,7 @@ export default function Hero() {
           
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Project?</h2>
           <p className="text-slate-300 max-w-2xl mx-auto mb-10">
-            Let's discuss how we can bring your ideas to life with our expertise and innovative solutions.
+            Lets discuss how we can bring your ideas to life with our expertise and innovative solutions.
           </p>
           <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-300 transform hover:-translate-y-1 shadow hover:shadow-lg font-medium">
             Get Free Consultation
