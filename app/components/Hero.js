@@ -163,8 +163,8 @@ export default function Hero() {
               <div className="w-32 h-32 bg-slate-700/50 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden border-4 border-slate-600/50 group-hover:border-blue-500/30 transition-colors duration-500">
                 <div className="text-4xl">👨‍💻</div>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Ahmed Khan</h3>
-              <p className="text-blue-400 text-sm mb-3">Senior React Developer</p>
+              <h3 className="text-xl font-semibold mb-2">Asim Mughal</h3>
+              <p className="text-blue-400 text-sm mb-3">CEO <br/>Senior React Developer</p>
               <p className="text-slate-300 mb-4 text-sm">Specialized in building complex React applications with modern state management and responsive designs.</p>
               <div className="flex gap-2 justify-center flex-wrap">
                 <span className="px-2 py-1 bg-slate-700/50 text-slate-300 rounded text-xs border border-slate-600/50">React</span>
@@ -177,8 +177,8 @@ export default function Hero() {
               <div className="w-32 h-32 bg-slate-700/50 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden border-4 border-slate-600/50 group-hover:border-amber-500/30 transition-colors duration-500">
                 <div className="text-4xl">👩‍💻</div>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Fatima Ali</h3>
-              <p className="text-amber-400 text-sm mb-3">UI/UX Specialist</p>
+              <h3 className="text-xl font-semibold mb-2">Faizan Ahmad</h3>
+              <p className="text-amber-400 text-sm mb-3">HR & UI/UX Specialist</p>
               <p className="text-slate-300 mb-4 text-sm">Creates intuitive user interfaces with a focus on accessibility, performance, and beautiful animations.</p>
               <div className="flex gap-2 justify-center flex-wrap">
                 <span className="px-2 py-1 bg-slate-700/50 text-slate-300 rounded text-xs border border-slate-600/50">Figma</span>
@@ -191,9 +191,9 @@ export default function Hero() {
               <div className="w-32 h-32 bg-slate-700/50 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden border-4 border-slate-600/50 group-hover:border-purple-500/30 transition-colors duration-500">
                 <div className="text-4xl">👨‍💻</div>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Bilal Siddiqui</h3>
-              <p className="text-purple-400 text-sm mb-3">Frontend Architect</p>
-              <p className="text-slate-300 mb-4 text-sm">Expert in building scalable frontend architectures and optimizing web performance for large applications.</p>
+              <h3 className="text-xl font-semibold mb-2">Usman Rasheed</h3>
+              <p className="text-purple-400 text-sm mb-3">Data Analyst & backend Developer</p>
+              <p className="text-slate-300 mb-4 text-sm"><span>Python|Excel|SQL|Java</span> Transforming raw data into meaningful insights to drive smarter business decisions.</p>
               <div className="flex gap-2 justify-center flex-wrap">
                 <span className="px-2 py-1 bg-slate-700/50 text-slate-300 rounded text-xs border border-slate-600/50">Vue.js</span>
                 <span className="px-2 py-1 bg-slate-700/50 text-slate-300 rounded text-xs border border-slate-600/50">Nuxt.js</span>
