@@ -6,36 +6,40 @@ import Image from 'next/image';
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
-  const [activeSection, setActiveSection] = useState(""); // Scroll & click ke liye
+  const [activeSection, setActiveSection] = useState("home"); // Scroll & click ke liye
 
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
 
-  useEffect(() => {
+  
+
+
+
+useEffect(() => {
+  const sections = ["home", "services", "tech", "projects", "team", "careers", "contact"];
+
   const handleScroll = () => {
-    const sections = [
-      { id: "/", top: 0 },
-      { id: "services", top: document.getElementById("services")?.offsetTop },
-      { id: "tech", top: document.getElementById("tech")?.offsetTop },
-      { id: "projects", top: document.getElementById("projects")?.offsetTop },
-      { id: "team", top: document.getElementById("team")?.offsetTop },
-      { id: "careers", top: document.getElementById("careers")?.offsetTop },
-      { id: "contact", top: document.getElementById("contact")?.offsetTop },
-    ];
-
-    const scrollPosition = window.scrollY + 100; // thoda offset
-    const current = sections.findLast(
-      section => section.top !== undefined && scrollPosition >= section.top
-    );
-
-    setActiveSection(current?.id || "");
+    let currentSection = "home"; // default
+    sections.forEach((sectionId) => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        const top = section.getBoundingClientRect().top;
+        if (top <= 80) { // 80px offset for navbar height
+          currentSection = sectionId;
+        }
+      }
+    });
+    setActiveSection(currentSection);
   };
 
   window.addEventListener("scroll", handleScroll);
+  handleScroll(); // initial check
+
   return () => window.removeEventListener("scroll", handleScroll);
 }, []);
+
 
 
   return (
@@ -51,21 +55,64 @@ export default function Hero() {
               </Link>
             </div>
 
-           <div className="hidden md:block">
+          <div className="hidden md:block">
   <div className="ml-10 flex items-baseline space-x-4">
-    <Link href="/" className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${activeSection === "/" ? "text-yellow-400" : "text-white hover:text-white"}`}>Home</Link>
-
-    <Link href="/services" className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${activeSection === "services" ? "text-yellow-400" : "text-gray-300 hover:text-white"}`}>Services</Link>
-
-    <Link href="/tech" className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${activeSection === "tech" ? "text-yellow-400" : "text-gray-300 hover:text-white"}`}>Tech Stack</Link>
-
-    <Link href="/projects" className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${activeSection === "projects" ? "text-yellow-400" : "text-gray-300 hover:text-white"}`}>Projects</Link>
-
-    <Link href="/team" className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${activeSection === "team" ? "text-yellow-400" : "text-gray-300 hover:text-white"}`}>Team</Link>
-
-    <Link href="/careers" className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${activeSection === "careers" ? "text-yellow-400" : "text-gray-300 hover:text-white"}`}>Careers</Link>
-
-    <Link href="/contact" className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${activeSection === "contact" ? "text-yellow-400" : "text-gray-300 hover:text-white"}`}>Contact</Link>
+    <Link
+      href="/"
+      className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${
+        activeSection === "home" ? "text-yellow-400" : "text-white"
+      }`}
+    >
+      Home
+    </Link>
+    <Link
+      href="/services"
+      className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${
+        activeSection === "services" ? "text-yellow-400" : "text-gray-300 hover:text-white"
+      }`}
+    >
+      Services
+    </Link>
+    <Link
+      href="/tech"
+      className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${
+        activeSection === "tech" ? "text-yellow-400" : "text-gray-300 hover:text-white"
+      }`}
+    >
+      Tech Stack
+    </Link>
+    <Link
+      href="/projects"
+      className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${
+        activeSection === "projects" ? "text-yellow-400" : "text-gray-300 hover:text-white"
+      }`}
+    >
+      Projects
+    </Link>
+    <Link
+      href="/team"
+      className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${
+        activeSection === "team" ? "text-yellow-400" : "text-gray-300 hover:text-white"
+      }`}
+    >
+      Team
+    </Link>
+    <Link
+      href="/careers"
+      className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${
+        activeSection === "careers" ? "text-yellow-400" : "text-gray-300 hover:text-white"
+      }`}
+    >
+      Careers
+    </Link>
+    <Link
+      href="/contact"
+      className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${
+        activeSection === "contact" ? "text-yellow-400" : "text-gray-300 hover:text-white"
+      }`}
+    >
+      Contact
+    </Link>
   </div>
 </div>
 
@@ -302,7 +349,7 @@ export default function Hero() {
               <h3 className="text-slate-200 font-semibold mb-4">More</h3>
               <ul className="space-y-2">
                 <li><Link href="/tech" className="text-slate-400 hover:text-white text-sm transition-colors duration-300">Tech Stack</Link></li>
-                <li><Link href="/career" className="text-slate-400 hover:text-white text-sm transition-colors duration-300">Career</Link></li>
+                <li><Link href="/careers" className="text-slate-400 hover:text-white text-sm transition-colors duration-300">Career</Link></li>
                 <li><Link href="/contact" className="text-slate-400 hover:text-white text-sm transition-colors duration-300">Contact</Link></li>
               </ul>
             </div>
@@ -310,9 +357,9 @@ export default function Hero() {
             <div>
               <h3 className="text-slate-200 font-semibold mb-4">Contact Info</h3>
               <ul className="space-y-2 text-slate-400 text-sm">
-                <li>info@edgerise.com</li>
-                <li>+92 300 1234567</li>
-                <li>Lahore, Pakistan</li>
+                <li>usmanrasheed.dev@gmail.com</li>
+                <li>+92 3044993095</li>
+                <li>Gujranwala, Pakistan</li>
               </ul>
             </div>
           </div>
