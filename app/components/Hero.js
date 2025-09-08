@@ -112,7 +112,7 @@ export default function Hero() {
             <div className="max-w-md">
               <h3 className="text-2xl font-bold mb-2">Asim Mughal</h3>
               <p className="text-slate-300 mb-4 leading-relaxed">
-                Visionary leader with over 10 years of experience in the tech industry. Asim founded Edge Rise with a mission to deliver cutting-edge solutions that help businesses thrive in the digital age. His expertise spans across software architecture, business strategy, and team leadership.
+                Visionary leader with over 10 years of experience in the tech industry. Asim founded Edge Rise with a mission to deliver cutting-edge solutions that help businesses thrive in the digital age. His expertise spans across software architecture business strategy, and team leadership.
               </p>
               <div className="flex gap-2 flex-wrap">
                 <span className="px-3 py-1 bg-slate-700/50 text-slate-300 rounded-full text-sm border border-slate-600/50">Strategic Planning</span>
@@ -159,7 +159,7 @@ export default function Hero() {
                 <h3 className="text-xl font-bold mb-2">Faizan Ahmad</h3>
                 <p className="text-slate-400 mb-4">HR Specialist & Operations</p>
                 <p className="text-slate-300 mb-4 leading-relaxed">
-                  Faizan ensures smooth operations and employee satisfaction, focusing on creating a productive work environment. His expertise in HR operations helps maintain our company's culture and efficiency.
+                  Faizan ensures smooth operations and employee satisfaction focusing on creating a productive work environment. His expertise in HR operations helps maintain our companys culture and efficiency.
                 </p>
                 <div className="flex gap-2 justify-center flex-wrap">
                   <span className="px-3 py-1 bg-slate-700/50 text-slate-300 rounded-full text-sm border border-slate-600/50">Operations</span>
