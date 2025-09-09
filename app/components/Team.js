@@ -268,7 +268,7 @@ export function Team() {
         <div className="mt-20 text-center bg-slate-800/30 p-12 rounded-3xl border border-slate-700/30">
           <h2 className="text-3xl font-bold mb-6">Join Our Team</h2>
           <p className="text-slate-300 max-w-2xl mx-auto mb-8">
-            We're always looking for talented individuals to join our growing team. Check out our open positions and become part of our success story.
+            We are always looking for talented individuals to join our growing team. Check out our open positions and become part of our success story.
           </p>
           <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:-translate-y-1 shadow-md hover:shadow-lg font-medium">
             View Open Positions
