@@ -125,7 +125,7 @@ export default function Careers() {
     {
       icon: "🍕",
       title: "Team Events",
-      description: "Regular team building activities and company events."
+      description: "Team building activities and company events."
     }
   ];
 
@@ -248,7 +248,7 @@ export default function Careers() {
                   </div>
                   <div className="lg:text-right">
                     <a 
-                      href={`mailto:careers@edgerise.com?subject=Application for ${job.title}`}
+                      href={`mailto:usmanrasheed.dev@gmail.com?subject=Application for ${job.title}`}
                       className="px-6 py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-lg hover:from-amber-600 hover:to-amber-700 transition-all duration-300 inline-block font-medium transform hover:-translate-y-1 shadow hover:shadow-lg"
                     >
                       Apply Now
@@ -264,9 +264,9 @@ export default function Careers() {
             <div className="text-center py-12">
               <div className="text-6xl mb-4">🔍</div>
               <h3 className="text-xl font-semibold mb-2">No current openings</h3>
-              <p className="text-slate-300 mb-6">We don't have any positions in this category right now, but check back later!</p>
+              <p className="text-slate-300 mb-6">We dont have any positions in this category right now, but check back later!</p>
               <a 
-                href="mailto:careers@edgerise.com"
+                href="mailto:usmanrasheed.dev@gmail.com"
                 className="px-6 py-3 bg-slate-800 text-slate-300 rounded-lg hover:bg-slate-700 transition-all duration-300 inline-block font-medium border border-slate-700/50"
               >
                 Send General Application
@@ -314,11 +314,11 @@ export default function Careers() {
         <div className="text-center mt-20">
           <h2 className="text-3xl font-bold mb-6">Ready to Start Your <span className="text-amber-400">Journey</span>?</h2>
           <p className="text-slate-300 max-w-2xl mx-auto mb-8">
-            Even if you don't see the perfect role, we'd love to hear from you. Send us your resume and tell us how you can contribute.
+            Even if you dont see the perfect role, we did love to hear from you. Send us your resume and tell us how you can contribute.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a 
-              href="mailto:careers@edgerise.com"
+              href="usmanrasheed.dev@gmail.com"
               className="px-8 py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-lg hover:from-amber-600 hover:to-amber-700 transition-all duration-300 transform hover:-translate-y-1 shadow-md hover:shadow-lg font-medium"
             >
               Send General Application
