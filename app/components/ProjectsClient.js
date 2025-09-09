@@ -223,7 +223,7 @@ export default function Projects() {
         <div className="mt-20 text-center">
           <h3 className="text-2xl md:text-3xl font-bold mb-6">Ready to Start Your Project?</h3>
          <p className="text-slate-300 max-w-2xl mx-auto mb-8">
-        Let&apos;s discuss how we can bring your ideas to life with our expertise and innovative solutions.
+        Lets discuss how we can bring your ideas to life with our expertise and innovative solutions.
 
           </p>
           <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-300 transform hover:-translate-y-1 shadow hover:shadow-lg font-medium">
