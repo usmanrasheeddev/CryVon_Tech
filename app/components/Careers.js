@@ -13,7 +13,7 @@ export default function Careers() {
       type: "Full-time",
       location: "Lahore, Pakistan",
       experience: "3-5 years",
-      description: "We're looking for an experienced React developer to join our frontend team and help build innovative web applications.",
+      description: "We are looking for an experienced React developer to join our frontend team and help build innovative web applications.",
       requirements: [
         "Strong experience with React.js and Next.js",
         "Proficiency in JavaScript/TypeScript",

@@ -35,7 +35,7 @@ export default function Contact() {
             Get in <span className="text-amber-400">Touch</span>
           </h2>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-            Have a project in mind? Let's discuss how we can help bring your ideas to life.
+            Have a project in mind? Lets discuss how we can help bring your ideas to life.
           </p>
         </div>
 
@@ -53,7 +53,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-200">Email</h4>
-                  <p className="text-slate-400 mt-1">hello@edgerise.com</p>
+                  <p className="text-slate-400 mt-1">usmanrasheed.dev@gmail.com</p>
                   <p className="text-slate-400">support@edgerise.com</p>
                 </div>
               </div>
@@ -66,8 +66,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-200">Phone</h4>
-                  <p className="text-slate-400 mt-1">+92 300 123 4567</p>
-                  <p className="text-slate-400">+92 321 987 6543</p>
+                  <p className="text-slate-400 mt-1">+92 304 499 3095</p>
+                  <p className="text-slate-400">+92 300 168 0522</p>
                 </div>
               </div>
               
@@ -80,8 +80,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-200">Location</h4>
-                  <p className="text-slate-400 mt-1">DHA Phase 6</p>
-                  <p className="text-slate-400">Lahore, Pakistan</p>
+                  <p className="text-slate-400 mt-1">SUI GAS ROAD</p>
+                  <p className="text-slate-400">Gujranwala, Pakistan</p>
                 </div>
               </div>
             </div>
@@ -120,7 +120,7 @@ export default function Contact() {
             
             {submitStatus === 'success' && (
               <div className="bg-green-500/10 border border-green-500/30 text-green-400 p-4 rounded-lg mb-6">
-                Thank you for your message! We'll get back to you within 24 hours.
+                Thank you for your message! Well get back to you within 24 hours.
               </div>
             )}
             
@@ -153,7 +153,7 @@ export default function Contact() {
                     required 
                     type="email" 
                     className="w-full rounded-lg bg-slate-800/50 border border-slate-700/50 px-4 py-3 text-slate-200 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500/30 transition-colors duration-300" 
-                    placeholder="name@company.com" 
+                    placeholder="usmanrasheed.dev@gmail.com" 
                   />
                 </div>
               </div>

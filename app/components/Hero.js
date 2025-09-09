@@ -281,7 +281,7 @@ useEffect(() => {
               <h3 className="text-slate-200 font-semibold mb-4">Contact Info</h3>
               <ul className="space-y-2 text-slate-400 text-sm">
                 <li>usmanrasheed.dev@gmail.com</li>
-                <li>+92 3044993095</li>
+                <li>+92 304 499 3095</li>
                 <li>Gujranwala, Pakistan</li>
               </ul>
             </div>
