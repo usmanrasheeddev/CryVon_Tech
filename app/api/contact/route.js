@@ -1,24 +1,24 @@
 // app/api/contact/route.js
-import nodemailer from 'nodemailer';
+import nodemailer from "nodemailer";
 
 export async function POST(request) {
   try {
     const { name: userName, email: userEmail, message: userMessage } = await request.json();
 
-    // Email transporter setup
+    // Gmail transporter setup
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      service: "gmail",
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        user: process.env.EMAIL_USER, // sender (your Gmail)
+        pass: process.env.EMAIL_PASS, // app password
       },
     });
 
     // Email content
     const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: process.env.TO_EMAIL,
-      replyTo: userEmail,
+      from: `"${userName}" <${process.env.EMAIL_USER}>`, // Always from your Gmail
+      to: process.env.TO_EMAIL, // Receiver (your Gmail)
+      replyTo: userEmail, // So you can reply to user directly
       subject: `New Message from ${userName} - EdgeRise Website`,
       html: `
         <h3>New Contact Form Submission</h3>
@@ -29,15 +29,14 @@ export async function POST(request) {
       `,
     };
 
-    // Email send karo
+    // Send email
     await transporter.sendMail(mailOptions);
 
-    console.log('✅ Email sent successfully to:', process.env.TO_EMAIL);
-    
-    return Response.json({ success: true, message: 'Email sent successfully' });
+    console.log("✅ Email sent successfully to:", process.env.TO_EMAIL);
 
+    return Response.json({ success: true, message: "Email sent successfully" });
   } catch (error) {
-    console.error('❌ Email sending error:', error);
-    return Response.json({ error: 'Email not sent' }, { status: 500 });
+    console.error("❌ Email sending error:", error);
+    return Response.json({ error: "Email not sent" }, { status: 500 });
   }
 }
