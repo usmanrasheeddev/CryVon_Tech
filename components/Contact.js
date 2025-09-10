@@ -1,11 +1,37 @@
-
 "use client";
 
+import { useState } from "react"; // Yeh line add karo
 
 export default function Contact() {
-  function handleSubmit(e) {
+  const [isSending, setIsSending] = useState(false); // Yeh line add karo
+
+  async function handleSubmit(e) {
     e.preventDefault();
-    alert("Message sent! (This is a demo — backend not yet connected.)");
+    setIsSending(true); // Loading start karo
+
+    // Form data collect karo
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData);
+
+    try {
+      // API call karo
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        alert("Message sent successfully!");
+        e.target.reset(); // Form clear ho jaye
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      alert("Network error. Please try again.");
+    } finally {
+      setIsSending(false); // Loading stop karo
+    }
   }
 
   return (
@@ -15,17 +41,41 @@ export default function Contact() {
           <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
           <p className="text-slate-300 mb-4">Drop us a line for projects or consulting.</p>
           <div className="space-y-3 text-slate-300 text-sm">
-            <div>Email: <a href="mailto:hello@edge-rise.example" className="text-teal-400">hello@edge-rise.example</a></div>
-            <div>HR: <a href="mailto:hr@edge-rise.example" className="text-teal-400">hr@edge-rise.example</a></div>
-            <div>Phone: +92-000-1234567</div>
+            <div>Email: <a href="mailto:usmanrasheed.dev@gmail.com" className="text-teal-400">usmanrasheed.dev@gmail.com</a></div>
+            <div>HR: <a href="mailto:usmanrasheed.dev@gmail.com" className="text-teal-400">usmanrasheed.dev@gmail.com</a></div>
+            <div>Phone: +92-304-499-3095</div>
           </div>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
-          <input type="text" placeholder="Your Name" className="w-full p-3 rounded-md bg-slate-800/50 border border-slate-700 text-sm"/>
-          <input type="email" placeholder="Your Email" className="w-full p-3 rounded-md bg-slate-800/50 border border-slate-700 text-sm"/>
-          <textarea rows="4" placeholder="Your Message" className="w-full p-3 rounded-md bg-slate-800/50 border border-slate-700 text-sm"></textarea>
-          <button type="submit" className="px-6 py-3 bg-gradient-to-r from-teal-400 to-cyan-400 text-slate-900 rounded-md font-semibold btn-hover">Send Message</button>
+          <input 
+            name="name" // Yeh add karo
+            type="text" 
+            placeholder="Your Name" 
+            className="w-full p-3 rounded-md bg-slate-800/50 border border-slate-700 text-sm"
+            required 
+          />
+          <input 
+            name="email" // Yeh add karo
+            type="email" 
+            placeholder="Your Email" 
+            className="w-full p-3 rounded-md bg-slate-800/50 border border-slate-700 text-sm"
+            required 
+          />
+          <textarea 
+            name="message" // Yeh add karo
+            rows="4" 
+            placeholder="Your Message" 
+            className="w-full p-3 rounded-md bg-slate-800/50 border border-slate-700 text-sm"
+            required 
+          ></textarea>
+          <button 
+            type="submit" 
+            disabled={isSending} // Loading state
+            className="px-6 py-3 bg-gradient-to-r from-teal-400 to-cyan-400 text-slate-900 rounded-md font-semibold btn-hover disabled:opacity-50"
+          >
+            {isSending ? "Sending..." : "Send Message"} {/* Loading text */}
+          </button>
         </form>
       </div>
     </section>

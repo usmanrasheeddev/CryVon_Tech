@@ -15,16 +15,23 @@ export default function Contact() {
     
     // Simulate form submission
     try {
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      setSubmitStatus('success');
-      setForm({name:'', email:'', subject:'', message:''});
-    } catch (error) {
-      setSubmitStatus('error');
-    } finally {
-      setIsSubmitting(false);
-      setTimeout(() => setSubmitStatus(null), 5000);
-    }
-  };
+  const res = await fetch("/api/contact", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(form),
+  });
+
+  if (!res.ok) throw new Error("Failed to submit");
+
+  setSubmitStatus("success");
+  setForm({ name: "", email: "", subject: "", message: "" });
+} catch (error) {
+  setSubmitStatus("error");
+} finally {
+  setIsSubmitting(false);
+  setTimeout(() => setSubmitStatus(null), 5000);
+}
+};
 
   return (
     <section id="contact" className="py-20 bg-slate-900 text-white">
@@ -54,7 +61,7 @@ export default function Contact() {
                 <div>
                   <h4 className="font-semibold text-slate-200">Email</h4>
                   <p className="text-slate-400 mt-1">usmanrasheed.dev@gmail.com</p>
-                  <p className="text-slate-400">support@edgerise.com</p>
+                  <p className="text-slate-400">uuu444384@gmail.com</p>
                 </div>
               </div>
               
@@ -80,7 +87,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-200">Location</h4>
-                  <p className="text-slate-400 mt-1">SUI GAS ROAD</p>
+                  <p className="text-slate-400 mt-1">sui gas road</p>
                   <p className="text-slate-400">Gujranwala, Pakistan</p>
                 </div>
               </div>
@@ -153,7 +160,7 @@ export default function Contact() {
                     required 
                     type="email" 
                     className="w-full rounded-lg bg-slate-800/50 border border-slate-700/50 px-4 py-3 text-slate-200 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500/30 transition-colors duration-300" 
-                    placeholder="usmanrasheed.dev@gmail.com" 
+                    placeholder="Example@gmail.com" 
                   />
                 </div>
               </div>
