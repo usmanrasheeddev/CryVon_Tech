@@ -74,8 +74,8 @@ export default function Navbar() {
               className="text-2xl font-bold select-none flex items-center"
               onClick={handleLinkClick}
             >
-              <span className="text-blue-400 hover:text-blue-300 transition-colors duration-300">Edge</span>
-              <span className="text-amber-400 hover:text-amber-300 transition-colors duration-300">Rise</span>
+              <span className="text-blue-400 hover:text-blue-300 transition-colors duration-300">CryVon</span>
+              <span className="text-amber-400 hover:text-amber-300 transition-colors duration-300">Tech</span>
             </Link>
           </div>
 

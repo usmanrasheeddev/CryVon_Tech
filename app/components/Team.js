@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from "next/link";
 
 export function Team() {
   const [activeDepartment, setActiveDepartment] = useState('all');
@@ -270,9 +271,11 @@ export function Team() {
           <p className="text-slate-300 max-w-2xl mx-auto mb-8">
             We are always looking for talented individuals to join our growing team. Check out our open positions and become part of our success story.
           </p>
-          <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:-translate-y-1 shadow-md hover:shadow-lg font-medium">
-            View Open Positions
-          </button>
+          <Link href="/careers">
+  <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:-translate-y-1 shadow-md hover:shadow-lg font-medium">
+    View Open Positions
+  </button>
+</Link>
         </div>
       </div>
     </section>
