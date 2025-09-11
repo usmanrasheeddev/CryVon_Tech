@@ -4,10 +4,10 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <a href="#" className="flex items-center gap-3">
-            <img src="/logo.png" alt="Edge Rise Logo" className="w-9 h-9 rounded-md object-cover"/>
+            <img src="/logo.png" alt="CryVon Tech Logo" className="w-9 h-9 rounded-md object-cover"/>
             <div>
-              <div className="text-xl font-extrabold tracking-tight">Edge Rise</div>
-              <div className="text-xs text-teal-400 font-medium -mt-1">Rising Beyond Limits</div>
+              <div className="text-xl font-extrabold tracking-tight">CryVon Tech</div>
+              <div className="text-xs text-teal-400 font-medium -mt-1">Innovating Beyond Limits</div>
             </div>
           </a>
 

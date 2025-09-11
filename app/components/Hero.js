@@ -54,7 +54,7 @@ useEffect(() => {
               Rising Beyond Limits in <span className="text-blue-400">Tech</span> <span className="text-amber-400">Solutions</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-              Edge Rise helps businesses grow with modern, scalable and affordable technology solutions tailored to your specific needs.
+              CryVon Tech helps businesses grow with modern, scalable and affordable technology solutions tailored to your specific needs.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link href="/contact">
@@ -252,8 +252,8 @@ useEffect(() => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <span className="text-2xl font-bold">
-                <span className="text-blue-400">Edge</span>
-                <span className="text-amber-400">Rise</span>
+                <span className="text-blue-400">CryVon</span>
+                <span className="text-amber-400">Tech</span>
               </span>
               <p className="text-slate-400 mt-4 text-sm">Rising Beyond Limits in Tech Solutions</p>
             </div>
@@ -288,7 +288,7 @@ useEffect(() => {
           </div>
           
           <div className="border-t border-slate-800/30 mt-8 pt-8 text-center">
-            <p className="text-slate-500 text-sm">© {new Date().getFullYear()} Edge Rise. All rights reserved.</p>
+            <p className="text-slate-500 text-sm">© {new Date().getFullYear()} CryVon Tech. All rights reserved.</p>
           </div>
         </div>
       </footer>

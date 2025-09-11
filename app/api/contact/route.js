@@ -19,9 +19,9 @@ export async function POST(request) {
       from: `"${userName}" <${process.env.EMAIL_USER}>`, // Always from your Gmail
       to: process.env.TO_EMAIL, // Receiver (your Gmail)
       replyTo: userEmail, // So you can reply to user directly
-      subject: `New Message from ${userName} - EdgeRise Website`,
+      subject: `New Message from ${userName} - CryVon Tech`,
       html: `
-        <h3>New Contact Form Submission</h3>
+        <h3>New Contact Form Submission CryVon-Tech</h3>
         <p><strong>Name:</strong> ${userName}</p>
         <p><strong>Email:</strong> ${userEmail}</p>
         <p><strong>Message:</strong> ${userMessage}</p>

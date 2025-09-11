@@ -13,7 +13,7 @@ export function Team() {
         name: "Asim Mughal",
         role: "CEO & Founder",
         image: "/team/asim.jpg",
-        bio: "Visionary leader with over 10 years of experience in the tech industry. Founded Edge Rise with a mission to deliver cutting-edge solutions.",
+        bio: "Visionary leader with over 10 years of experience in the tech industry. Founded CryVon-Tech with a mission to deliver cutting-edge solutions.",
         skills: ["Strategic Planning", "Business Development", "Tech Innovation"],
         social: { linkedin: "#", twitter: "#" }
       }
@@ -157,7 +157,7 @@ export function Team() {
             Our <span className="text-blue-400">Talented</span> Team
           </h1>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-            Meet the passionate professionals who make Edge Rise a leading technology solutions provider.
+            Meet the passionate professionals who make CryVon Tech a leading technology solutions provider.
           </p>
         </div>
 

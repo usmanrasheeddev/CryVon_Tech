@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Edge Rise",
-  description: "Rising Beyond Limits in Tech Solutions",
+  title: "CryVon Tech",
+  description: "Crystal-Clear Innovation for the Future of Technology",
 };
 
 export default function RootLayout({

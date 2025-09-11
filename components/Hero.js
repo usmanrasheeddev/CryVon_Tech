@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="bg-slate-800 text-center py-20">
       <h1 className="text-4xl md:text-6xl font-bold mb-6">
-        Welcome to <span className="text-yellow-400">Edge Rise</span>
+        Welcome to <span className="text-yellow-400">CryVon Tech</span>
       </h1>
       <p className="text-lg text-slate-300 mb-8">
         We build modern, scalable, and reliable digital solutions.
