@@ -36,7 +36,11 @@ export function Team() {
         image: "/team/faizan1.jpg",
         bio: "Ensures smooth operations and employee satisfaction, focusing on creating a productive work environment.",
         skills: ["HR Operations", "Employee Relations", "Performance Management"],
-        social: { linkedin: "#", twitter: "#" }
+       social: { 
+  linkedin: "www.linkedin.com/in/usman-rasheed-3a7158364", 
+  twitter: "https://twitter.com/username" 
+}
+
       }
     ],
     development: [
