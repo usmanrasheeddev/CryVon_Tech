@@ -167,9 +167,15 @@ useEffect(() => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-slate-800/30 p-6 rounded-xl border border-slate-700/30 hover:border-blue-500/30 transition-all duration-500 group text-center">
-              <div className="w-32 h-32 bg-slate-700/50 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden border-4 border-slate-600/50 group-hover:border-blue-500/30 transition-colors duration-500">
-                <div className="text-4xl">👨‍💻</div>
-              </div>
+             <div className="w-32 h-32 bg-slate-700/50 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden border-4 border-slate-600/50 group-hover:border-blue-500/30 transition-colors duration-500 relative">
+  <Image
+    src="/team/asim.jpg"
+    alt="Asim Mughal"
+    fill
+    className="object-cover"
+  />
+</div>
+
               <h3 className="text-xl font-semibold mb-2">Asim Mughal</h3>
               <p className="text-blue-400 text-sm mb-3">CEO <br/>Senior React Developer</p>
               <p className="text-slate-300 mb-4 text-sm">Specialized in building complex React applications with modern state management and responsive designs.</p>
@@ -180,13 +186,20 @@ useEffect(() => {
               </div>
             </div>
             
-            <div className="bg-slate-800/30 p-6 rounded-xl border border-slate-700/30 hover:border-amber-500/30 transition-all duration-500 group text-center">
-              <div className="w-32 h-32 bg-slate-700/50 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden border-4 border-slate-600/50 group-hover:border-amber-500/30 transition-colors duration-500">
-                <div className="text-4xl">👩‍💻</div>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Faizan Ahmad</h3>
-              <p className="text-amber-400 text-sm mb-3">HR <br/>UI/UX Specialist</p>
-              <p className="text-slate-300 mb-4 text-sm">Creates intuitive user interfaces with a focus on accessibility, performance, and beautiful animations.</p>
+           <div className="bg-slate-800/30 p-6 rounded-xl border border-slate-700/30 hover:border-purple-500/30 transition-all duration-500 group text-center">
+             <div className="w-32 h-32 bg-slate-700/50 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden border-4 border-slate-600/50 group-hover:border-blue-500/30 transition-colors duration-500 relative">
+  <Image
+    src="/team/usman1.jpg"
+    alt="Usman Rasheed"
+    fill
+    className="object-cover"
+  />
+</div>
+
+              <h3 className="text-xl font-semibold mb-2">Usman Rasheed</h3>
+              <p className="text-purple-400 text-sm mb-3">HR <br/>Data Analyst & backend Developer</p>
+              <p className="text-slate-300 mb-4 text-sm">Transforming raw data into meaningful insights to drive smarter business decisions.</p>
+
               <div className="flex gap-2 justify-center flex-wrap">
                 <span className="px-2 py-1 bg-slate-700/50 text-slate-300 rounded text-xs border border-slate-600/50">Figma</span>
                 <span className="px-2 py-1 bg-slate-700/50 text-slate-300 rounded text-xs border border-slate-600/50">Tailwind</span>
@@ -194,13 +207,19 @@ useEffect(() => {
               </div>
             </div>
             
-            <div className="bg-slate-800/30 p-6 rounded-xl border border-slate-700/30 hover:border-purple-500/30 transition-all duration-500 group text-center">
-              <div className="w-32 h-32 bg-slate-700/50 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden border-4 border-slate-600/50 group-hover:border-purple-500/30 transition-colors duration-500">
-                <div className="text-4xl">👨‍💻</div>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Usman Rasheed</h3>
-              <p className="text-purple-400 text-sm mb-3">HR <br/>Data Analyst & backend Developer</p>
-              <p className="text-slate-300 mb-4 text-sm">Transforming raw data into meaningful insights to drive smarter business decisions.</p>
+            <div className="bg-slate-800/30 p-6 rounded-xl border border-slate-700/30 hover:border-amber-500/30 transition-all duration-500 group text-center">
+              <div className="w-32 h-32 bg-slate-700/50 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden border-4 border-slate-600/50 group-hover:border-blue-500/30 transition-colors duration-500 relative">
+  <Image
+    src="/team/faizan2.jpg"
+    alt="Faizan Ahmad"
+    fill
+    className="object-cover"
+  />
+</div>
+
+              <h3 className="text-xl font-semibold mb-2">Faizan Ahmad</h3>
+              <p className="text-amber-400 text-sm mb-3">HR <br/>UI/UX Specialist</p>
+              <p className="text-slate-300 mb-4 text-sm">Creates intuitive user interfaces with a focus on accessibility, performance, and beautiful animations.</p>
               <div className="flex gap-2 justify-center flex-wrap">
                 <span className="px-2 py-1 bg-slate-700/50 text-slate-300 rounded text-xs border border-slate-600/50">Python</span>
                 <span className="px-2 py-1 bg-slate-700/50 text-slate-300 rounded text-xs border border-slate-600/50">Java</span>
