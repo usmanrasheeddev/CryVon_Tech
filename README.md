@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 
-=======
 # CryVon Tech / Teregion Website
 
 [Live Site → teregi on.com](https://teregion.com/)  
