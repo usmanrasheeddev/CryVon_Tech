@@ -7,14 +7,14 @@ export default function Contact() {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    setIsSending(true); // Loading start karo
+    setIsSending(true); // Loading start 
 
-    // Form data collect karo
+    // Form data collect 
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData);
 
     try {
-      // API call karo
+      // API call 
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -23,14 +23,14 @@ export default function Contact() {
 
       if (response.ok) {
         alert("Message sent successfully!");
-        e.target.reset(); // Form clear ho jaye
+        e.target.reset(); // Form clear 
       } else {
         alert("Something went wrong. Please try again.");
       }
     } catch (error) {
       alert("Network error. Please try again.");
     } finally {
-      setIsSending(false); // Loading stop karo
+      setIsSending(false); // Loading stop 
     }
   }
 
@@ -49,21 +49,21 @@ export default function Contact() {
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <input 
-            name="name" // Yeh add karo
+            name="name" // Yeh add 
             type="text" 
             placeholder="Your Name" 
             className="w-full p-3 rounded-md bg-slate-800/50 border border-slate-700 text-sm"
             required 
           />
           <input 
-            name="email" // Yeh add karo
+            name="email" // Yeh add 
             type="email" 
             placeholder="Your Email" 
             className="w-full p-3 rounded-md bg-slate-800/50 border border-slate-700 text-sm"
             required 
           />
           <textarea 
-            name="message" // Yeh add karo
+            name="message" // Yeh add 
             rows="4" 
             placeholder="Your Message" 
             className="w-full p-3 rounded-md bg-slate-800/50 border border-slate-700 text-sm"
